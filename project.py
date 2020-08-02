@@ -136,7 +136,7 @@ def dist_scraper(address):
     lat = float(cord[0]['GeoObject']['Point']['pos'].split(" ")[0])
     long = float(cord[0]['GeoObject']['Point']['pos'].split(" ")[1])
     coords_1 = (lat, long)
-    coords_2 = (44.514711, 40.182982) #coordinates for Arami Str.
+    coords_2 = (44.514711, 40.182982) 
     dd = geopy.distance.vincenty(coords_1, coords_2).km
   else:
     lat = ""
