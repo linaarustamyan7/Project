@@ -221,6 +221,8 @@ mydata = mydata.drop([57])
 # So after the cleaning of the data we get our final data for analysis.
 mydata
 
+mydata.to_csv("projectdata.csv")
+
 """## **Analysis part**"""
 
 #We plot a bar chart that shows top 10  restaurants by number of reviews.
